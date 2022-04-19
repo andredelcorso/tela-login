@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+:root {
+    --cor0: #D9B8C1;
+    --cor1: #956065;
+    --cor2: #DAA520;
+    --cor3: #803945;
+    --cor4: rgba(214, 208, 208, 0.63);
+    --cor5: #ffffff;
+    --cor6: #e7bc4f;
+
+    --fonte-padrao: Roboto, Helvetica, sans-serif;
+    --fonte-titulo: Indie Flower, cursive, Helvetica, sans-serif;
+     
+}
+body {
+    margin: 0;
+}
+
+.main-login { 
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor0);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.left-screen { 
+    color: var(--cor2);
+    font-size: 18pt;
+    font-family: var(--fonte-titulo);
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-screen-img {
+    width: 35vw;
+    height: 100vh;
+}
+
+.right-screen {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.card-login {
+    background-color: var(--cor1);
+    width: 60%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.card-login > h1 {
+    font-family: var(--fonte-padrao);
+    color: var(--cor6);
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 7px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.textfield > label { 
+    color: var(--cor5);
+    font-family: var(--fonte-padrao);
+    padding: 5px;
+    font-weight: 300;
+    font-size: 12pt;
+
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    font-size: 12pt;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--cor4);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-sizing: border-box;
+    outline: none;
+}
+
+.button-login { 
+    width: 100%;
+    font-size: 12pt;
+    padding: 16px 0px;
+    outline: none;
+    border-radius: 10px;
+    font-family: var(--fonte-padrao);
+    margin: 25px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background-color: var(--cor6);
+    box-shadow: 0px 10px 40px -12px #e7bc4fad;
+    cursor: pointer;
+}
